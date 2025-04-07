@@ -441,10 +441,15 @@ img{
     .recommended-card {
       width: 80%;
     }
+    .course-card{
+      font-size:15px ;
+    }
   
     /* Explore Image Grid */
     .explore-section__images {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
       gap: 15px;
     }
   
@@ -478,6 +483,9 @@ img{
   
     .recommended-card h3 {
       font-size: 18px;
+    }
+    .course-card{
+      font-size:10px ;
     }
   }
   
