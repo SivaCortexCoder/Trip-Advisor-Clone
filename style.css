@@ -15,6 +15,7 @@ body {
     position: sticky;
     top:0;
     background-color: white;
+    z-index: 1;
 
 }
 .navbar-section-1 img{
@@ -37,8 +38,8 @@ body {
 
 .navbar-section-3__2 button{
     border: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-right: 25px;
     padding-left: 25px;
     background-color: black;
@@ -86,6 +87,9 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
+}
+.search-items input:focus{
+  outline: none;
 }
 .section-item-1{
     display: flex;
@@ -172,6 +176,20 @@ body {
     max-width: 1200px; 
 }
 
+.explore-section-card{
+  position: relative;
+ 
+}
+.explore-card__h2{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.explore-card__h2 h2{
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  
+}
 .explore-section__content {
     text-align: center;
     margin-bottom: 30px;
@@ -191,6 +209,14 @@ body {
     height: auto;
     border-radius: 10px;
     object-fit: cover;
+    filter: brightness(85%);
+}
+
+.tag img{
+  width: 15%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 .recommended-1{
     display: flex;
@@ -219,7 +245,20 @@ body {
     margin: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
+    position: relative;
   }
+  .like{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
   .course-card img {
     width: 100%;
@@ -260,6 +299,7 @@ body {
     margin: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
+    position: relative;
   }
   
   .course-card-new img {
@@ -321,7 +361,7 @@ body {
 
 
 
-  .explore-section__images img:hover{
+  .explore-section-card:hover{
     transform: scale(1.1);
     transition-duration: 1s;
 
